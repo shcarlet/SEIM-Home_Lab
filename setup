@@ -1,0 +1,20 @@
+# Set up KALI linux Virtualmachine
+~ username: kali
+~ password: kali
+
+# Configuring Elastic agent on VM to collect Logs and forward it to SIEM
+ add elastic defend integration
+
+copy and run it in terminal:
+      curl -L -O https://artifacts.elastic.co/downloads/beats/elastic-agent/elastic-agent-8.17.0-linux-x86_64.tar.gz
+      tar xzvf elastic-agent-8.17.0-linux-x86_64.tar.gz
+      cd elastic-agent-8.17.0-linux-x86_64
+      sudo ./elastic-agent install --url=https://7e2c3c5a106646088a0c0d847750559f.fleet.us-central1.gcp.cloud.es.io:443 --enrollment-token=V0g2Vl9aTUI2ejFrdi00MmZCaU06RkR5bk9sQURRbjJoeTFXVThEUjItdw==
+
+verify:
+    sudo systemctl status elastic-agent.service
+
+
+running nmap scan:
+    sudo nmap localhost
+
