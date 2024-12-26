@@ -12,9 +12,11 @@ https://www.virtualbox.org/
 
 Elastic cloud:
 https://www.elastic.co/cloud
--- NL
-//
+
+
 running nmap scan
+
+
 ![image](https://github.com/user-attachments/assets/cbae74f1-1c9d-42a3-80b7-903d33e97bda)
 
 
